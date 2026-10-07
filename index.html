@@ -127,6 +127,16 @@
   .two p { color: var(--muted); margin-bottom: 14px; }
   .two h2 { text-align: left; }
 
+  .founder {
+    display: flex; align-items: center; gap: 14px; margin-top: 24px;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 18px; padding: 16px 18px;
+    transition: box-shadow .2s;
+  }
+  .founder:hover { box-shadow: var(--shadow); }
+  .founder .av { width: 48px; height: 48px; border-radius: 50%; background: var(--surface-2); display: grid; place-items: center; font-size: 1.5rem; flex-shrink: 0; }
+  .founder small { display: block; color: var(--muted); }
+  .founder .in { margin-left: auto; font-weight: 700; font-size: .9rem; color: var(--accent); white-space: nowrap; }
+
   .roadmap { list-style: none; border-left: 3px solid var(--border); padding-left: 24px; }
   .roadmap li { position: relative; padding-bottom: 24px; }
   .roadmap li::before {
@@ -249,6 +259,14 @@
         <p lang="vi">Duckman Technologies là một startup giai đoạn đầu tại Việt Nam. Chúng tôi tin rằng người học nào cũng xứng đáng có một người bạn luyện nói kiên nhẫn với chi phí hợp lý — không chỉ những ai đủ điều kiện thuê gia sư riêng.</p>
         <p lang="en">DuckMan English is our first product. We are currently building the MVP and preparing a closed beta with early users.</p>
         <p lang="vi">DuckMan English là sản phẩm đầu tiên của chúng tôi. Hiện chúng tôi đang xây dựng bản MVP và chuẩn bị mở beta kín cho những người dùng đầu tiên.</p>
+        <a class="founder" href="https://www.linkedin.com/in/%C4%91%E1%BB%A9c-ho%C3%A0ng-425bb1235" target="_blank" rel="noopener">
+          <div class="av">🦆</div>
+          <div>
+            <b>Đức Hoàng</b>
+            <small><span lang="en">Founder · Duckman Technologies</span><span lang="vi">Nhà sáng lập · Duckman Technologies</span></small>
+          </div>
+          <span class="in">LinkedIn ↗</span>
+        </a>
       </div>
       <div id="roadmap">
         <h2 lang="en">Roadmap</h2>
